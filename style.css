@@ -4,6 +4,16 @@ body {
     text-align: center;
 }
 
+footer {
+  text-align: center;
+}
+
+button {
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
 h1 {
     color: blue;
 }
