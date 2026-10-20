@@ -8,12 +8,10 @@ footer {
   text-align: center;
 }
 
-button {
-  text-align: center;
-  align-content: center;
+.bienvenida {
   align-items: center;
   display: flex;
-  justify-self: center;
+  justify-content: center;
 }
 
 h1 {
