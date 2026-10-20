@@ -7,3 +7,35 @@ body {
 h1 {
     color: blue;
 }
+
+[name="titulo"] {
+  /* 1. Fuente responsive: se adapta dinámicamente al ancho de la pantalla */
+  font-size: clamp(2rem, 5vw + 1rem, 4.5rem);
+  font-family: 'Arial', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  
+  /* 2. Configuración del gradiente azul inicial */
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  
+  /* 3. Enmascaramiento: hace que el fondo solo pinte el texto */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  /* 4. Transición suave para el efecto hover */
+  transition: transform 0.3s ease, filter 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+/* 5. Efecto Hover: Cambios cuando el cursor pasa por encima */
+.titulo-gradiente:hover {
+  /* Cambia el tono del gradiente (invierte o resalta los azules) */
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  /* Efecto visual opcional: agranda ligeramente el título y lo hace brillar */
+  transform: scale(1.03);
+  filter: drop-shadow(0px 4px 10px rgba(0, 198, 255, 0.3));
+}
